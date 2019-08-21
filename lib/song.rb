@@ -31,4 +31,15 @@ class Song
     end
     count_artists
   end
+  def self.genre_count
+    count_genres = {}
+    @@genres.each do |genre|
+      if count_genres[genre]
+        count_genres[genre] += 1
+      else
+        count_genres[genre] = 1
+      end
+    end
+    count_genres
+  end
 end
