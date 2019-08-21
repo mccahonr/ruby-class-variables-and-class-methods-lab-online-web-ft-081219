@@ -8,6 +8,6 @@ class Song
     @@count +=1
   end
   def method_name
-    
+
   end
 end
